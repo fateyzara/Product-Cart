@@ -1,0 +1,116 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Order Confirmation Box */
+.order-confirmation {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Checkmark Icon */
+.checkmark {
+    font-size: 30px;
+    color: green;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Header Styling */
+.order-header h1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-header p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Order Items */
+.order-items {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.order-items li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Item Images */
+.order-items img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+/* Quantity and Price Styling */
+.quantity {
+    color: red;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/* Order Total Section */
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Start New Order Button */
+.new-order-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.new-order-btn:hover {
+    background-color: #c0392b;
+}
+@media (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cart{
+        margin-top: 20px;
+    }
+}
+@media (max-width:480px) {
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

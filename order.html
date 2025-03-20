@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+
+    <div class="order-confirmation">
+        <div class="order-header">
+            <span class="checkmark">✔</span>
+            <h1>Order Confirmed</h1>
+            <p>We hope you enjoy your food!</p>
+        </div>
+
+        <ul class="order-items">
+            <li>
+                <img src="tiramisu.jpg" alt="Classic Tiramisu">
+                <div>
+                    <h3>Classic Tiramisu</h3>
+                    <p><span class="quantity">1x</span> @ $5.50</p>
+                </div>
+                <span class="price">$5.50</span>
+            </li>
+
+            <li>
+                <img src="vanilla.jpg" alt="Vanilla Bean Crème Brûlée">
+                <div>
+                    <h3>Vanilla Bean Crème Brûlée</h3>
+                    <p><span class="quantity">4x</span> @ $7.00</p>
+                </div>
+                <span class="price">$28.00</span>
+            </li>
+
+            <li>
+                <img src="pannacotta.jpg" alt="Vanilla Panna Cotta">
+                <div>
+                    <h3>Vanilla Panna Cotta</h3>
+                    <p><span class="quantity">2x</span> @ $6.50</p>
+                </div>
+                <span class="price">$13.00</span>
+            </li>
+        </ul>
+
+        <div class="order-total">
+            <span>Order Total</span>
+            <span class="total-price">$46.50</span>
+        </div>
+
+        <button class="new-order-btn">Start New Order</button>
+    </div>
+
+</body>
+<script src="order.js"></script>
+</html>
+

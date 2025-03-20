@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <title>Dessert Shop</title>
+        <link rel="stylesheet" href="cart.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="desserts">
+                <h2>Desserts</h2>
+                <div class="products">
+                    <div class="products" data-name="Waffle with Berries" data-price="6.50">
+                        <img src="waffles.jpg" alt="waffle with berries">
+                        <h3>Waffle with Berries</h3>
+                        <p class="price">$6.50</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product" data-name="Vanilla Bean Creme Brulee" data-price="7.00">
+                        <img src="vanilla.jpg" alt="Vanilla Bean Creme Brulee">
+                        <h3>Vanilla Bean Creme Brulee</h3>
+                        <p class="price">$7.00</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product" data-name="Macaron mix of five" data-price="8.00">
+                        <img src="macaron.jpg" alt="Macaron mix of five">
+                        <h3>Macaron mix of five</h3>
+                        <p class="price">$8.00</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product" data-name="Classic Tiramisu" data-price="5.50">
+                        <img src="Tiramisu.jpg" alt="Classic Tiramisu">
+                        <h3>Classic Tiramisu</h3>
+                        <p class="price">$5.50</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="pistachio.jpg" alt="Pistachio Baklava">
+                        <h3>Pistachio Baklava</h3>
+                        <p class="price">$4.00</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="lemon.jpg" alt="Lemon meringue pie">
+                        <h3>Lemon meringue pie</h3>
+                        <p class="price">$5.00</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="redvelvet.jpg" alt="Red Velvet Cake">
+                        <h3> Red Velvet Cake</h3>
+                        <p class="price">$4.50</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="pannacotta.jpg" alt="Vanilla Panna Cotta">
+                        <h3>Vanilla Panna Cotta</h3>
+                        <p class="price">$5.50</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+                    <div class="product">
+                        <img src="brownies.jpg" alt="Salted Carmel Brownie">
+                        <h3> Salted Caramel Brownie</h3>
+                        <p class="price">$6.50</p>
+                        <button class="add-to-cart">Add to cart</button>
+                    </div>
+            </div>
+        </div>
+<!--shopping cart section-->
+<div class="cart">
+    <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+    <div id="cart-items">
+        <p>Your added items will appear here.</p>
+        <button id="checkout-btn" class="checkout-btn">Checkout</button>
+    </div>
+</div>
+<!--checkout confirmation popup-->
+<div id="order-confirmation" class="modal">
+    <div class="modal-content">
+        <h2>Order Confirmed</h2>
+        <p>We hope you enjoy your food!</p>
+        <div id="order-details"></div>
+        <p class="order-total">Total: <span id="total-price">$0.00</span></p>
+        <button class="new-order">Start New Order</button>
+    </div>
+</div>
+    </body>
+    <script src="cart.js"></script>
+</html>
